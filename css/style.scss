@@ -312,6 +312,11 @@
 }
 
 @media screen and (max-width:770px) {
+    .home{
+        .my-home{
+            flex-direction: column-reverse;
+        }
+    }
     .services {
         .my-services {
             .my-card {
