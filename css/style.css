@@ -283,6 +283,12 @@
   }
 }
 @media screen and (max-width: 770px) {
+  .my-navbar .my-container .my-brand {
+    width: 50%;
+  }
+  .my-navbar .my-container .my-brand img {
+    width: 100%;
+  }
   .home .my-home {
     flex-direction: column-reverse;
   }
