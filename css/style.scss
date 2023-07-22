@@ -1,0 +1,323 @@
+@mixin btn {
+    display: inline-block;
+    padding: 16px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-size: 200% auto;
+    border-radius: 5px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #0086ff, #02d47d, #0086ff);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+        color: #fff;
+        background-position: right;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(279deg, rgba(0, 185, 255, 1) 0%, rgba(0, 247, 99, 1) 100%);
+    border-radius: 20px;
+}
+
+.my-navbar {
+    position: fixed;
+    height: 75px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transition: all .3s;
+
+    .my-container {
+        .my-brand {
+            width: 38%;
+
+            img {
+                width: 75%;
+            }
+        }
+
+        .my-btn {
+            @include btn;
+
+            i {
+                transition: all .3s;
+                opacity: 0;
+            }
+
+            &:hover {
+                i {
+                    padding-left: 10px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.home {
+    height: 100%;
+    padding-bottom: 100px;
+
+    .my-home {
+        align-items: center;
+        margin-top: 170px;
+
+        .text {
+            span {
+                font-size: 18px;
+                font-weight: 500;
+                color: #0086ff;
+            }
+
+            h1 {
+                font-size: 50px;
+                padding: 15px 0;
+                color: #444c63;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 18px;
+                padding: 12px 0;
+                color: #969696
+            }
+
+            .my-btn {
+                @include btn;
+                margin-top: 20px;
+
+                i {
+                    transition: all .3s;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    i {
+                        padding-left: 10px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.scrolled {
+    box-shadow: 2px -3px 16px 6px #a6a6a65e;
+}
+
+.about {
+    height: 100%;
+
+    .my-about {
+        align-items: center;
+
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            .details {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 50px 0;
+
+                .first {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    padding: 10px 15px;
+                    img {
+                        width: 50%;
+                    }
+
+                    h4 {
+                        font-size: 18px;
+                        padding: 10px 0;
+                    }
+                }
+
+                .border-right {
+                    border-right: 2px solid #96969652;
+                }
+                .border-left {
+                    border-left: 2px solid #96969652;
+                }
+            }
+
+            h1 {
+                font-size: 50px;
+                padding: 15px 0;
+                color: #444c63;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 18px;
+                padding: 12px 0;
+                color: #969696
+            }
+
+            .my-btn {
+                @include btn;
+                margin-top: 20px;
+
+                i {
+
+                    transition: all .3s;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    i {
+                        padding-left: 10px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.services {
+    padding: 50px 0;
+
+    .my-services {
+        height: 100%;
+
+        h1 {
+            font-size: 50px;
+            padding: 25px 0;
+            color: #444c63;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .my-card {
+            width: 30%;
+            margin: 15px 10px;
+            padding: 25px;
+            border-radius: 30px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition: all .3s;
+
+            h4 {
+                padding: 15px 0;
+                color: #444c63;
+            }
+
+            p {
+                font-size: 14px;
+                padding: 5px 0;
+                color: #969696
+            }
+
+            a {
+                @include btn;
+                font-size: 12px;
+                padding: 10px 15px;
+                border-radius: 30px;
+
+                i {
+
+                    transition: all .3s;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    i {
+                        padding-left: 10px;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &:hover {
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 20px 3px;
+
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1205px) {
+    .my-navbar {
+        .my-container {
+            .my-btn {
+                padding: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .my-navbar {
+        .my-container {
+            .dropdown {
+                width: 100%;
+                background-color: #fff;
+
+            }
+        }
+    }
+
+    .services {
+        .my-services {
+            .my-card {
+                width: 47%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:770px) {
+    .services {
+        .my-services {
+            .my-card {
+                width: 90%;
+                margin: 5px auto;
+            }
+        }
+    }
+}

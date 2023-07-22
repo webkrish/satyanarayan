@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(279deg, rgb(0, 185, 255) 0%, rgb(0, 247, 99) 100%);
+  border-radius: 20px;
+}
+
+.my-navbar {
+  position: fixed;
+  height: 75px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.my-navbar .my-container .my-brand {
+  width: 38%;
+}
+.my-navbar .my-container .my-brand img {
+  width: 75%;
+}
+.my-navbar .my-container .my-btn {
+  display: inline-block;
+  padding: 16px 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-size: 200% auto;
+  border-radius: 5px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #0086ff, #02d47d, #0086ff);
+  text-decoration: none;
+  font-weight: 500;
+}
+.my-navbar .my-container .my-btn:hover {
+  color: #fff;
+  background-position: right;
+}
+.my-navbar .my-container .my-btn i {
+  transition: all 0.3s;
+  opacity: 0;
+}
+.my-navbar .my-container .my-btn:hover i {
+  padding-left: 10px;
+  opacity: 1;
+}
+
+.home {
+  height: 100%;
+  padding-bottom: 100px;
+}
+.home .my-home {
+  align-items: center;
+  margin-top: 170px;
+}
+.home .my-home .text span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0086ff;
+}
+.home .my-home .text h1 {
+  font-size: 50px;
+  padding: 15px 0;
+  color: #444c63;
+  font-weight: 700;
+}
+.home .my-home .text p {
+  font-size: 18px;
+  padding: 12px 0;
+  color: #969696;
+}
+.home .my-home .text .my-btn {
+  display: inline-block;
+  padding: 16px 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-size: 200% auto;
+  border-radius: 5px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #0086ff, #02d47d, #0086ff);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.home .my-home .text .my-btn:hover {
+  color: #fff;
+  background-position: right;
+}
+.home .my-home .text .my-btn i {
+  transition: all 0.3s;
+  opacity: 0;
+}
+.home .my-home .text .my-btn:hover i {
+  padding-left: 10px;
+  opacity: 1;
+}
+.home .my-home .image img {
+  width: 100%;
+}
+
+.scrolled {
+  box-shadow: 2px -3px 16px 6px rgba(166, 166, 166, 0.368627451);
+}
+
+.about {
+  height: 100%;
+}
+.about .my-about {
+  align-items: center;
+}
+.about .my-about .image img {
+  width: 100%;
+}
+.about .my-about .text .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.about .my-about .text .details .first {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+.about .my-about .text .details .first img {
+  width: 50%;
+}
+.about .my-about .text .details .first h4 {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.about .my-about .text .details .border-right {
+  border-right: 2px solid rgba(150, 150, 150, 0.3215686275);
+}
+.about .my-about .text .details .border-left {
+  border-left: 2px solid rgba(150, 150, 150, 0.3215686275);
+}
+.about .my-about .text h1 {
+  font-size: 50px;
+  padding: 15px 0;
+  color: #444c63;
+  font-weight: 700;
+}
+.about .my-about .text p {
+  font-size: 18px;
+  padding: 12px 0;
+  color: #969696;
+}
+.about .my-about .text .my-btn {
+  display: inline-block;
+  padding: 16px 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-size: 200% auto;
+  border-radius: 5px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #0086ff, #02d47d, #0086ff);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.about .my-about .text .my-btn:hover {
+  color: #fff;
+  background-position: right;
+}
+.about .my-about .text .my-btn i {
+  transition: all 0.3s;
+  opacity: 0;
+}
+.about .my-about .text .my-btn:hover i {
+  padding-left: 10px;
+  opacity: 1;
+}
+
+.services {
+  padding: 50px 0;
+}
+.services .my-services {
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .my-services h1 {
+  font-size: 50px;
+  padding: 25px 0;
+  color: #444c63;
+  font-weight: 700;
+  text-align: center;
+}
+.services .my-services .my-card {
+  width: 30%;
+  margin: 15px 10px;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.3s;
+}
+.services .my-services .my-card h4 {
+  padding: 15px 0;
+  color: #444c63;
+}
+.services .my-services .my-card p {
+  font-size: 14px;
+  padding: 5px 0;
+  color: #969696;
+}
+.services .my-services .my-card a {
+  display: inline-block;
+  padding: 16px 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-size: 200% auto;
+  border-radius: 5px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #0086ff, #02d47d, #0086ff);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+.services .my-services .my-card a:hover {
+  color: #fff;
+  background-position: right;
+}
+.services .my-services .my-card a i {
+  transition: all 0.3s;
+  opacity: 0;
+}
+.services .my-services .my-card a:hover i {
+  padding-left: 10px;
+  opacity: 1;
+}
+.services .my-services .my-card:hover {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 20px 3px;
+}
+
+@media screen and (max-width: 1205px) {
+  .my-navbar .my-container .my-btn {
+    padding: 14px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .my-navbar .my-container .dropdown {
+    width: 100%;
+    background-color: #fff;
+  }
+  .services .my-services .my-card {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .services .my-services .my-card {
+    width: 90%;
+    margin: 5px auto;
+  }
+}/*# sourceMappingURL=style.css.map */
