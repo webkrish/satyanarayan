@@ -51,6 +51,7 @@
     right: 0;
     background-color: #fff;
     transition: all .3s;
+    z-index: 99999;
 
     .my-container {
         .my-brand {
@@ -203,13 +204,13 @@
                 i {
 
                     transition: all .3s;
-                    opacity: 0;
+                    visibility:hidden;
                 }
-
+                
                 &:hover {
                     i {
                         padding-left: 10px;
-                        opacity: 1;
+                        visibility:visible;
                     }
                 }
             }
@@ -372,6 +373,34 @@
                 }
                 a{
                     color: #fff;
+                }
+            }
+        }
+    }
+    .contact-sec{
+        margin: 50px 0;
+        background: url(../img/bg.jpg);
+        background-position:center;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        align-items: center;
+        border-radius: 10px;
+        a{
+            @include btn;
+
+            i {
+                transition: all .3s;
+                opacity: 0;
+            }
+
+            &:hover {
+                i {
+                    padding-left: 10px;
+                    opacity: 1;
                 }
             }
         }

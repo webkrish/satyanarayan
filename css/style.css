@@ -27,6 +27,7 @@
   right: 0;
   background-color: #fff;
   transition: all 0.3s;
+  z-index: 99999;
 }
 .my-navbar .my-container .my-brand {
   width: 38%;
@@ -194,11 +195,11 @@
 }
 .about .my-about .text .my-btn i {
   transition: all 0.3s;
-  opacity: 0;
+  visibility: hidden;
 }
 .about .my-about .text .my-btn:hover i {
   padding-left: 10px;
-  opacity: 1;
+  visibility: visible;
 }
 
 .services {
@@ -350,6 +351,47 @@
 }
 .scroll .item .my-card:hover a {
   color: #fff;
+}
+.scroll .contact-sec {
+  margin: 50px 0;
+  background: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+  border-radius: 10px;
+}
+.scroll .contact-sec a {
+  display: inline-block;
+  padding: 16px 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-size: 200% auto;
+  border-radius: 5px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #0086ff, #02d47d, #0086ff);
+  text-decoration: none;
+  font-weight: 500;
+}
+.scroll .contact-sec a:hover {
+  color: #fff;
+  background-position: right;
+}
+.scroll .contact-sec a i {
+  transition: all 0.3s;
+  opacity: 0;
+}
+.scroll .contact-sec a:hover i {
+  padding-left: 10px;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1205px) {
