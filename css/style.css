@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
   scroll-behavior: smooth;
+  border: 1px solid red;
 }
 
 ::-webkit-scrollbar {
@@ -207,6 +208,7 @@
 }
 .services .my-services {
   height: 100%;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -273,6 +275,10 @@
   padding: 50px 0;
 }
 .scroll h1 {
+  font-size: 50px;
+  padding: 25px 0;
+  color: #444c63;
+  font-weight: 700;
   text-align: center;
 }
 .scroll .item {
@@ -425,6 +431,16 @@
   z-index: 0;
   height: 100%;
   background: linear-gradient(279deg, rgba(0, 185, 255, 0.5019257703) 0%, rgba(0, 247, 99, 0.4683123249) 100%);
+}
+.appointment h1 {
+  font-size: 50px;
+  padding: 25px 0;
+  color: #444c63;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  padding-top: 25px;
 }
 .appointment .appoint-sec {
   flex-direction: row-reverse;
