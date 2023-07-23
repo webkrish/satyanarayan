@@ -163,6 +163,7 @@
                     text-align: center;
                     align-items: center;
                     padding: 10px 15px;
+
                     img {
                         width: 50%;
                     }
@@ -176,6 +177,7 @@
                 .border-right {
                     border-right: 2px solid #96969652;
                 }
+
                 .border-left {
                     border-left: 2px solid #96969652;
                 }
@@ -279,6 +281,102 @@
     }
 }
 
+.scroll {
+    padding: 50px 0;
+
+    h1 {
+        text-align: center;
+    }
+
+    .item {
+        display: flex;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            // width: 0;
+            height: 8px;
+        }
+
+        .my-card {
+            margin: 30px 15px;
+            min-width: 350px;
+            background-color: #fff;
+            box-shadow: 0px 0px 5px #00000073;
+            transition: all .3s;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            padding-bottom: 20px;
+
+            h4 {
+                padding: 10px;
+                font-size: 22px;
+            }
+            h6{ 
+                font-size: 12px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                padding: 15px;
+            }
+            a {
+                text-transform: capitalize;
+                color: #444c63;
+                font-weight: 500;
+                text-decoration: none;
+                transition: all .3s;
+                position: relative;
+               
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background: #fff;
+                    width: 0;
+                    height: 2px;
+                    bottom: -2px;
+                    right: 0;
+                    transition: all .3s;
+                }
+                i {
+                    color: #fff;
+                    transition: all .3s;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    i {
+                        padding-left: 10px;
+                        opacity: 1;
+                    }
+                    &::after {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                transition: all .3s;
+            }
+
+            &:hover {
+                transition: all .3s;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                background-color: #0086ff;
+                color: #fff;
+                img {
+                    transform: scale(1.03);
+                }
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width:1205px) {
@@ -312,21 +410,24 @@
 }
 
 @media screen and (max-width:770px) {
-    .my-navbar{
-        .my-container{
-            .my-brand{
+    .my-navbar {
+        .my-container {
+            .my-brand {
                 width: 50%;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
         }
     }
-    .home{
-        .my-home{
+
+    .home {
+        .my-home {
             flex-direction: column-reverse;
         }
     }
+
     .services {
         .my-services {
             .my-card {

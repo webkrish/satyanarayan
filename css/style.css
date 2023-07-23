@@ -268,6 +268,90 @@
   box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 20px 3px;
 }
 
+.scroll {
+  padding: 50px 0;
+}
+.scroll h1 {
+  text-align: center;
+}
+.scroll .item {
+  display: flex;
+  overflow-x: auto;
+}
+.scroll .item::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll .item .my-card {
+  margin: 30px 15px;
+  min-width: 350px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4509803922);
+  transition: all 0.3s;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.scroll .item .my-card h4 {
+  padding: 10px;
+  font-size: 22px;
+}
+.scroll .item .my-card h6 {
+  font-size: 12px;
+}
+.scroll .item .my-card p {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 15px;
+}
+.scroll .item .my-card a {
+  text-transform: capitalize;
+  color: #444c63;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+.scroll .item .my-card a::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  right: 0;
+  transition: all 0.3s;
+}
+.scroll .item .my-card a i {
+  color: #fff;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.scroll .item .my-card a:hover i {
+  padding-left: 10px;
+  opacity: 1;
+}
+.scroll .item .my-card a:hover::after {
+  width: 100%;
+  left: 0;
+}
+.scroll .item .my-card img {
+  width: 100%;
+  transition: all 0.3s;
+}
+.scroll .item .my-card:hover {
+  transition: all 0.3s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #0086ff;
+  color: #fff;
+}
+.scroll .item .my-card:hover img {
+  transform: scale(1.03);
+}
+.scroll .item .my-card:hover a {
+  color: #fff;
+}
+
 @media screen and (max-width: 1205px) {
   .my-navbar .my-container .my-btn {
     padding: 14px;
