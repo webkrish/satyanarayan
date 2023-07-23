@@ -204,13 +204,13 @@
                 i {
 
                     transition: all .3s;
-                    visibility:hidden;
+                    visibility: hidden;
                 }
-                
+
                 &:hover {
                     i {
                         padding-left: 10px;
-                        visibility:visible;
+                        visibility: visible;
                     }
                 }
             }
@@ -313,7 +313,8 @@
                 padding: 10px;
                 font-size: 22px;
             }
-            h6{ 
+
+            h6 {
                 font-size: 12px;
             }
 
@@ -322,6 +323,7 @@
                 font-weight: 300;
                 padding: 15px;
             }
+
             a {
                 text-transform: capitalize;
                 color: #444c63;
@@ -329,7 +331,7 @@
                 text-decoration: none;
                 transition: all .3s;
                 position: relative;
-               
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -340,6 +342,7 @@
                     right: 0;
                     transition: all .3s;
                 }
+
                 i {
                     color: #fff;
                     transition: all .3s;
@@ -351,6 +354,7 @@
                         padding-left: 10px;
                         opacity: 1;
                     }
+
                     &::after {
                         width: 100%;
                         left: 0;
@@ -368,19 +372,24 @@
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 background-color: #0086ff;
                 color: #fff;
+
                 img {
                     transform: scale(1.03);
                 }
-                a{
+
+                a {
                     color: #fff;
                 }
             }
         }
     }
-    .contact-sec{
-        margin: 50px 0;
+}
+
+.contact {
+    .contact-sec {
+        margin: 50px auto;
         background: url(../img/bg.jpg);
-        background-position:center;
+        background-position: center;
         background-size: cover;
         background-attachment: fixed;
         color: #fff;
@@ -388,25 +397,48 @@
         justify-content: space-between;
         padding: 50px;
         align-items: center;
+        position: relative;
         border-radius: 10px;
-        a{
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 0;
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(279deg, rgba(0, 185, 255, 0.5019257703081232) 0%, rgba(0, 247, 99, 0.468312324929972) 100%)
+        }
+
+        h1 {
+            z-index: 1;
+        }
+
+        a {
+            z-index: 1;
             @include btn;
 
             i {
                 transition: all .3s;
-                opacity: 0;
-            }
-
-            &:hover {
-                i {
-                    padding-left: 10px;
-                    opacity: 1;
-                }
+                padding-left: 10px;
+                opacity: 1;
             }
         }
     }
 }
 
+.appointment {
+    .appoint-sec {
+        .google-map {
+            iframe {
+                width: 100%;
+            }
+
+        }
+    }
+}
 
 @media screen and (max-width:1205px) {
     .my-navbar {
