@@ -62,6 +62,11 @@
             }
         }
 
+        .my-dropdown {
+            padding: 0 50px;
+            padding-bottom: 25px;
+        }
+
         .my-btn {
             @include btn;
 
@@ -394,6 +399,7 @@
         background-attachment: fixed;
         color: #fff;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 50px;
         align-items: center;
@@ -430,8 +436,42 @@
 }
 
 .appointment {
+    background: url(../img/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+        height: 100%;
+        background: linear-gradient(279deg, rgba(0, 185, 255, 0.5019257703081232) 0%, rgba(0, 247, 99, 0.468312324929972) 100%)
+    }
+
     .appoint-sec {
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 50px 0;
+
+        .my-form {
+            z-index: 1;
+            margin: 25px 0;
+
+            .my-btn {
+                @include btn;
+                border: none;
+                outline: none;
+            }
+        }
+
         .google-map {
+            z-index: 1;
+
             iframe {
                 width: 100%;
             }

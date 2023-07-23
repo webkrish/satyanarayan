@@ -35,6 +35,10 @@
 .my-navbar .my-container .my-brand img {
   width: 75%;
 }
+.my-navbar .my-container .my-dropdown {
+  padding: 0 50px;
+  padding-bottom: 25px;
+}
 .my-navbar .my-container .my-btn {
   display: inline-block;
   padding: 16px 45px;
@@ -361,6 +365,7 @@
   background-attachment: fixed;
   color: #fff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px;
   align-items: center;
@@ -408,6 +413,57 @@
   opacity: 1;
 }
 
+.appointment {
+  background: url(../img/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.appointment::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+  background: linear-gradient(279deg, rgba(0, 185, 255, 0.5019257703) 0%, rgba(0, 247, 99, 0.4683123249) 100%);
+}
+.appointment .appoint-sec {
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 50px 0;
+}
+.appointment .appoint-sec .my-form {
+  z-index: 1;
+  margin: 25px 0;
+}
+.appointment .appoint-sec .my-form .my-btn {
+  display: inline-block;
+  padding: 16px 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-size: 200% auto;
+  border-radius: 5px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #0086ff, #02d47d, #0086ff);
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+.appointment .appoint-sec .my-form .my-btn:hover {
+  color: #fff;
+  background-position: right;
+}
+.appointment .appoint-sec .google-map {
+  z-index: 1;
+}
 .appointment .appoint-sec .google-map iframe {
   width: 100%;
 }
