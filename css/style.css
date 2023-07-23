@@ -35,10 +35,6 @@
 .my-navbar .my-container .my-brand img {
   width: 75%;
 }
-.my-navbar .my-container .my-dropdown {
-  padding: 0 50px;
-  padding-bottom: 25px;
-}
 .my-navbar .my-container .my-btn {
   display: inline-block;
   padding: 16px 45px;
@@ -477,6 +473,8 @@
   .my-navbar .my-container .dropdown {
     width: 100%;
     background-color: #fff;
+    padding: 0 50px;
+    padding-bottom: 25px;
   }
   .services .my-services .my-card {
     width: 47%;

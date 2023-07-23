@@ -62,11 +62,6 @@
             }
         }
 
-        .my-dropdown {
-            padding: 0 50px;
-            padding-bottom: 25px;
-        }
-
         .my-btn {
             @include btn;
 
@@ -496,7 +491,8 @@
             .dropdown {
                 width: 100%;
                 background-color: #fff;
-
+                padding: 0 50px;
+                padding-bottom: 25px;
             }
         }
     }
