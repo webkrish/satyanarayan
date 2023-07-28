@@ -307,7 +307,7 @@
             margin: 30px 15px;
             min-width: 350px;
             background-color: #fff;
-            box-shadow: 0px 0px 5px #00000073;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             transition: all .3s;
             border-radius: 10px;
             text-align: center;
@@ -374,7 +374,7 @@
 
             &:hover {
                 transition: all .3s;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 20px 3px;
                 background-color: #0086ff;
                 color: #fff;
 
